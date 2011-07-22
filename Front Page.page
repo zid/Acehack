@@ -1,0 +1,16 @@
+**AceHack** is a variant of the computer game [NetHack](http://nethack.org), aimed to keep similar (although not necessarily identical) gameplay to the original game, while improving its interface.
+
+You may be interested in the following links:
+
+- [Manually-updated log of differences between NetHack and AceHack](http://patch-tag.com/r/ais523/acehack/snapshot/current/content/raw/doc/fixes36.0)
+- [Automatically generated list of recent changes to AceHack](https://patch-tag.com/r/ais523/acehack/snapshots/all/history)
+- [acehack.rawrnix.com](http://acehack.rawrnix.com) - public AceHack server (telnet to it to play online)
+- [Development source](http://patch-tag.com/r/ais523/acehack) (darcs repository)
+
+This wiki also contains information relevant to the development of AceHack:
+
+- The [TODO]() page lists things that will likely be in AceHack eventually;
+- The [Ideas]() page contains ideas for future changes;
+- The [Bugs]() page contains bugs in AceHack that should ideally be fixed (many of which are also in NetHack).
+
+As AceHack's gameplay is so similar to NetHack's, if you're looking for, or want to add, gameplay advice about AceHack, a good place is  the [NetHack Wiki](http://nethackwiki.com). Most of the information there will also apply to AceHack, and AceHack-specific information will likely be welcomed if its context is made clear.

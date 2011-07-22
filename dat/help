@@ -1,0 +1,104 @@
+Quick reference (default command keybindings, map symbols):
+
+  Move / Attack           Other Actions                  Information
+y k u      7 8 9     i Describe/use item        / Say what a symbol represents
+ \|/        \|/      , Pick up item             ; Say what is on a map square
+h-s-l  or  4-s-6     > Interact with terrain   ^X View your character's stats
+ /|\        /|\     ^W Do religious actions    ^E View your character's skills
+b j n      1 2 3     Z Cast spells              A View or adjust equipment
+
+        Terrain                 Items                     Monsters
+ -| Walls, open doors    ) Weapons or ammo     All letters, numbers, and some
+  + Closed door          [ Piece of armour     punctuation marks (&:;'@~)
+  . Floor of a room      % Edible item         represent monster types, e.g.:
+  # Corridor/tree/sink   / Wand                @ human/elf         G gnome
+ <> Stairs (up/down)     = Ring                o goblin/orc        k kobold
+  { Fountain             " Amulet              h other humanoid    Z zombie
+  } Pool of water/lava   ? Scroll              d dog/canine        : reptile
+  _ Altar                ! Potion              f cat/feline        a insect
+  \ Throne               $ Pile of gold        u horse/unicorn     r rodent
+  0 Boulder              + Spellbook           q other quadruped   F fungus
+  ` Statue               * Gem or rock         x mythical insect   b blob
+  ^ Discovered trap      ( Other usable item   e orb/sphere/eye    B bird
+
+AceHack is a Dungeons and Dragons like game where you (the adventurer) descend
+into the depths of the dungeon in search of the Amulet of Yendor, reputed to
+be hidden somewhere below the twentieth level.  You begin your adventure with
+a pet that can help you in many ways, and can be trained to do all sorts of
+things.  On the way you will find useful (or useless) items, quite possibly
+with magic properties, and assorted monsters.  You can attack a monster by
+trying to move onto the space a monster is on (but often it is much wiser to
+leave it alone).  Unlike text adventure games, which give you a verbal
+description of your location, AceHack gives you a visual image of the dungeon
+level you are on, showing terrain and items with punctuation marks, and
+monsters (usually) as letters.  To determine what a symbol means, use the ;
+command to view what's on a square on the map, or the / command to explain a
+symbol typed in.
+
+In addition to the commands shown in the quick reference above, a range of
+other commands exist in order to make playing the game faster, or allow for
+various more bizarre actions (see ?b for a complete list):
+
+y k u      7 8 9   79238613 or yuhjklbn: go one step in specified direction
+ \|/        \|/                YUHJKLBN: repeatedly move in a direction
+h-s-l  or  4-s-6      5/g/control-<dir>: cautiously move in a direction
+ /|\        /|\                  m<dir>: move without picking up objects
+b j n      1 2 3       -<dir> or F<dir>: attack even with no obvious target
+
+ a   Use or apply a tool or other usable object ((), or dip into a potion
+ A   View currently equipped equipment, or equip/unequip multiple objects
+ c   Chat to a nearby monster, or pay your bill in a shop
+ C   Rename a monster, individual item, type of item, or level
+ d   Drop one item
+ D   Drop multiple items
+^D   Kick an object, monster, or terrain feature
+ e   Eat an item (use e, to eat an item on the floor)
+ E   Write on the floor (either with your fingers, or an item)
+^E   View or enhance your character's skills
+ f   Throw or fire your character's default ammo (set with Q or A)
+ F   Attack in a given direction, even if apparently there's nothing there
+^F   Give a name to the current level (that shows up in the ^O screen)
+ G   Jump or teleport, or ride a monster (use G. to dismount)
+ i   List items, or do something with an item (subsumes most other commands)
+ I   List items of a given type you own, or describe an item
+^I   Change which letter referes to which item in your inventory
+ m   Move in a given direction even if it looks dangerous to do so
+ M   Use a monster ability, if polymorphed into a form that has one
+ o   Open, close, or unlock a door (or you can walk into a door to open it)
+ O   Change game options
+^O   Show an overview of what your character remembers of the dungeon
+^P   Review recently displayed messages
+ q   Quaff (drink) an item
+ Q   Ready an item as your default ammo for firing/throwing via f
+ r   Read the writing on an item (this casts spells from scrolls)
+^R   Redraw the screen
+ s   Wait one turn, searching the surrounding area
+ S   Save the game, or quit the game (quitting deletes your save file)
+ t   Fire an item (if wielding an appropriate launcher), or throw an item
+ T   Unequip one piece of equipment
+ v   Autoexplore: automatically travel to unexplored/interesting places
+ V   Invoke an artifact power; or rub, ignite, or try to break an object
+^V   If in tutorial mode, review previous tutorial messages
+ w   Hold (wield) an item in your hands (it will be used to attack things)
+ W   Equip one piece of equipment
+^W   Religious actions: pray for help, make a sacrifice, or turn undead
+ x   Swap your main weapon with your offhand or secondary weapon
+ X   Start or stop fighting with main+offhand weapons, rather than just main
+ z   Zap a wand, unleashing the magic within it
+ Z   Cast a spell your character has memorized
+^Z   Pause and background the game so that you can run other programs
+ ?   Show the in-game help menu
+ /   Describe a text string or symbol by name
+ ;   Explain what the symbol on a particular map square represents
+ \   Show which items your character has named or identified
+ >   Climb stairs/ladders; sacrifice on altars; dip into fountains; or sit
+ <   An alternative command to climb up stairs with
+ ^   List nearby discovered traps, or search for or disarm traps
+ $   Display your financial situation (gold pieces, and debt/credit in a shop)
+ +   Display your spell list, or change which spell has which letter
+ _   Automatically travel to a distant location of your choice
+ .   Draw a magic heptagram on the current square, with fingers or an athame
+ ,   Pick up items on the current square
+ @   Change whether your character automatically picks up some items
+ :   Look at (or feel, while blind) the current square
+ #   Repeat a command (e.g. #20s to wait 20 turns), or run a command by name

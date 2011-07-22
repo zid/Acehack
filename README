@@ -1,0 +1,122 @@
+                AceHack 3.6.0 -- General information
+
+AceHack is a fork of NetHack, originally based on NetHack version
+3.4.3.  NetHack is a dungeon exploration game, a distant descendent of
+Rogue and Hack; Acehack aims to provide gameplay very similar to that
+of the official NetHack, but a better interface, fewer bugs, and a
+more open development process.  Generally speaking, where gameplay-
+relevant changes have been made to the game, they are designed to make
+the game easier rather than harder.
+
+AceHack 3.6.0 is the first release; the version number is chosen to
+avoid clashes with official versions of NetHack.
+
+Some highlights of what is new in this fork:
+
+* Customisable keyboard controls; the default controls are a mix of
+  numpad and vikeys, allowing either letters or the numpad to be used
+  for movement.
+* Many controls have been generalised (e.g. < now interacts with all
+  terrain, not just downstairs), reducing the number of commands that
+  need to be memorised (although the old commands still work).  The
+  game can be played with just a few additional commands on top of
+  movement.
+* A generally cleaner and simpler interface.
+* Many game elements are tweaked to remember things for the player
+  (e.g. the entrance to the Mines is now a ladder, to distinguish it
+  from the stairs deeper into the dungeons), hopefully reducing the
+  need to keep notes.
+* A huge simplification of game options; most NetHack options still
+  exist (with a few exceptions, like number_pad which is replaced by
+  the customisable keyboard controls), but are generally unnecessary.
+  AceHack aims to have sane defaults for all customisable options.
+* A new scoring system, which hopefully is less exploitable than the
+  old one.
+
+A fuller list of changes for this release can be found in the file 
+doc/fixes36.0 in the source distribution.
+
+AceHack save and bones files are not compatible with NetHack save and
+bones files, so please ensure you finish any games you may be playing
+before upgrading.
+
+                        - - - - - - - - - - -
+
+Here is a fuller explanation of how to compile your code.  Note that
+for the time being, the only supported platform and interface is the
+tty interface on UNIX-like systems (including Linux); support for more
+platforms and interfaces is planned later, but I wanted to get at
+least one working first.
+
+1.  Unpack the code in a dedicated new directory.  We will refer to
+    that directory as the 'Top' directory.  It makes no difference
+    what you call it.
+
+2.  Before you do anything else, please read carefully the file called
+    "license" in the 'dat' subdirectory.  The authors of NetHack are
+    very serious about their license, and the contributors to AceHack
+    also expect that you will follow it.
+
+3.  If everything is in order, you can now turn to trying to get the
+    program to compile and run on your particular system.  The current
+    default system is an autoconf-based system running on Linux,
+    although it should work on all UNIX-like systems.
+
+    The files sys/*/Install.* were written to guide you in configuring
+    the program for your operating system.  The files win/*/Install.*
+    are available, where necessary, to help you in configuring the
+    program for particular windowing environments.  Reading them, and
+    the man pages, should answer most of your questions.
+
+    For instructions for building via the autoconf-based system, see
+    the file sys/autoconf/Install.ac. This is now the recommended way
+    to compile, and has the advantage that it needs only minimal
+    amounts of configuration by hand.
+
+                        - - - - - - - - - - -
+
+If you have problems building the game, or you find bugs in it, email
+me for advice; my email address is <ais523@bham.ac.uk>. Alternatively,
+you could try asking in a NetHack-related forum, such as
+news:rec.games.roguelike.nethack or irc:freenode.org/#nethack. Also
+feel free to submit other queries, patches, etc.; although if you want
+gameplay advice, it's probably a better idea to first consult the
+changelog (doc/fixes36.0) to see the differences between AceHack and
+NetHack version 3.4.3, and keeping those in mind, to ask in a general
+NetHack-related gameplay forum; AceHack's gameplay is very similar to
+NetHack's.
+
+When sending correspondence, please observe the following:
+
+* Please be sure to include your machine type, OS, and patchlevel, if
+  it's potentially relevant to the bug (if you can recreate the bug on
+  multiple systems, or have looked into the source and know why it
+  happened, it probably isn't).
+
+* Never send us binary files (e.g. save files or bones files); they
+  aren't portable between systems, so this would simply end up sending
+  large files for no reason. Instructions on how to reproduce a bug
+  are much more useful.
+
+* Though we make an effort to reply to each bug report, it may take
+  some time before you receive feedback.  This is especially true
+  during the period immediately after a new release, when we get the
+  most bug reports.
+
+If you apply patches to the code yourself, they may well be relevant
+to bug reports, so explain that as well. I have no problem with people
+writing and applying patches to their games; however, if you write a
+patch to AceHack, try publicising it in a relevant place, to help
+avoid duplication of effort. (Patches that I like may well become part
+of the "official" AceHack source, and it already contains several
+patches that were originally third-party patches to NetHack 3.4.3; see
+the online repository at <http://patch-tag.com/r/ais523/acehack/home>
+for the latest source, although note that unreleased development
+source is unlikely to work correctly without modifications.
+
+Also bear in mind that one of AceHack's design goals is to stay
+similar to vanilla NetHack, at least in the near future. If you have
+an idea for a feature that would stray from this aim, you may want to
+consider submitting your patch to a different NetHack variant instead.
+
+                  -- Good luck, and happy Hacking --
